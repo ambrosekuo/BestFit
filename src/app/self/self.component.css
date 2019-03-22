@@ -1,0 +1,67 @@
+.self-main-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.self-container {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: [avatar] 40% [stats] 60%;
+  grid-template-rows: [header] 25% [body] 75%;
+}
+.avatar-container {
+  grid-column: avatar;
+  grid-row: header;
+  border: 2px black solid;
+
+}
+
+
+.stats-container {
+  grid-column: stats;
+  grid-row: header;
+  border: 2px black solid;
+
+  display: grid;
+  grid-template-columns: [body] 40% [level] 60%;
+  grid-template-rows: [topside] 50% [bottomside] 50%;
+}
+
+.level-container {
+    border: 2px black solid;
+    grid-column: level;
+    grid-row: topside;
+    
+    text-align: center;
+    font-size: 40px;
+    border: 0.1vw black solid;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.26);
+  
+    display:grid;
+    grid-template-rows: [level] 80% [expbar] 20%;
+  }
+  
+  #level {
+    border-bottom: 2px black solid;
+    grid-row: level;
+  }
+  
+  #expBar {
+    grid-row: expbar;
+  }
+
+  #expBarProgress {
+      height: 100%;
+      width: 0;
+      background:green;
+  }
+
+
+.body-container {
+  grid-column: span 2;
+  grid-row: body;
+
+  border: 2px black solid;
+}
