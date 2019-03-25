@@ -12,4 +12,5 @@ app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname,'/dist/fitnessGame/index.html'));
 });
 
+app.listen(process.env.PORT || 8080);
 // Start the app by listening on the default Heroku
